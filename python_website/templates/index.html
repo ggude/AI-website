@@ -13,7 +13,9 @@
         <input type="text" id="text_input" name="text_input">
         <button type="submit">Invoke API</button>
     </form>
-    <p>API Response:</p>
-    <pre>{{ response_text }}</pre>
+    <div id="response-container">
+        <p>API Response:</p>
+        <textarea readonly>{{ generated_text }}</textarea>
+    </div>
 </body>
 </html>
