@@ -33,7 +33,9 @@ def index():
             else:
                 generated_text = "Error: 'generated_text' key not found in API response"
         else:
-            generated_text = f"Error: {response.status_code}"
+            #generated_text = f"Error: {response.status_code}"
+            generated_text = "Error: {}".format(response.status_code)
+
 
     return render_template('index.html', generated_text=generated_text, css_file='style.css')
 
