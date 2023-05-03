@@ -10,3 +10,6 @@ condacolab.install()
 !conda init 
 
 !source /usr/local/bin/activate py35
+
+Problem :
+!conda info (doesnt show activated envi, shows none)
